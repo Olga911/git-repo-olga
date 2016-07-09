@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Игра случайное число</title>
+    <style>
+	body{
+		  font-size:30px;
+		  color: grey;
+	    }
+	</style>    
+		<script>
+			function Random(MinValue, MaxValue)
+			{
+				MinValue = parseInt(MinValue);
+				MaxValue = parseInt(MaxValue);
+
+		  		return (Math.floor( Math.random() * ((MaxValue-MinValue)+1) ) ) + MinValue;
+			}
+		</script>
+
+    
+	</head>
+		<body>
+        
+		<p> min = <input type="text" id="txtMin" style="color:#008080"> </p>
+		<p> max = <input type="text" id="txtMax" style="color:#000080"> </p>
+	
+		<p> 
+			<input  type="button" 
+			        value = "Нажми на меня"
+					onclick="textOut.value = Random(txtMin.value,txtMax.value)" 
+					> 
+		</p>
+		
+		<p> Random = <input type="text" id="textOut" style="color:red">  </p>
+
+	    </body>
+		    
+</html>
