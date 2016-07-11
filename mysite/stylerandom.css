@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, Verdana,  sans-serif; /* Семейство шрифтов */
+  font-size: 11pt; /* Размер основного шрифта в пунктах  */
+  background-color: #f0f0f0; /* Цвет фона веб-страницы */
+  color: #333; /* Цвет основного текста */ 
+}
+p {
+  text-align: justify; /* Выравнивание по ширине */
+  margin-left: 60px; /* Отступ слева в пикселах */
+  margin-right: 1000px; /* Отступ справа в пикселах */
+  border-bottom: 1px solid #999; /* Параметры линии снизу */
+  padding-bottom: 15px; /* Отступ от линии снизу до текста  */
+}

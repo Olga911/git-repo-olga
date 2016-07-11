@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<title>Случайное число</title>
 	<meta charset="utf-8">
-	<title>Игра случайное число</title>
-    <style>
-	body{
-		  font-size:30px;
-		  color: grey;
-	    }
-	</style>    
+	<link rel="stylesheet" href="stylerandom.css">
+	</head>
+	<body>
 		<script>
 			function Random(MinValue, MaxValue)
 			{
@@ -19,22 +16,22 @@
 			}
 		</script>
 
-    
-	</head>
-		<body>
+    </body>
+	<body>
         
 		<p> min = <input type="text" id="txtMin" style="color:#008080"> </p>
+
 		<p> max = <input type="text" id="txtMax" style="color:#000080"> </p>
 	
 		<p> 
 			<input  type="button" 
 			        value = "Нажми на меня"
 					onclick="textOut.value = Random(txtMin.value,txtMax.value)" 
-					> 
+			> 
 		</p>
 		
-		<p> Random = <input type="text" id="textOut" style="color:red">  </p>
+		<p> Random = <input type="text" id="textOut" style="color:red"> </p>
 
-	    </body>
+	</body>
 		    
 </html>
